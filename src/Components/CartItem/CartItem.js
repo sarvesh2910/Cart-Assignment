@@ -3,9 +3,7 @@ import style from './CartItem.module.css';
 import deleteIcon from '../../assets/delete.svg';
 
 class CartItem extends Component {
-	shouldComponentUpdate(nextProps, nextState, nextContext) {
-		return nextProps.item.quantity !== this.props.item.quantity
-	}
+	
 
 	render() {
 		let item = this.props.item;
