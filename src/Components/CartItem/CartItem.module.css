@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  margin: 2px 0;
+  justify-content: space-around;
+}
+
+.nameAndPrice {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  display: flex;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.productPrice {
+  color: #535353;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  display: flex;
+}
+
+.quantity {
+  display: flex;
+}
+
+.quantityInput {
+  outline: none;
+  display: flex;
+  text-align: center;
+  max-width: 60px;
+  padding: 5px 10px;
+}
+
+.productPriceTotal {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+
+}
+
+.productPriceTotal p {
+  margin: 0;
+  font-size: 18px;
+  color: #535353;
+  font-weight: 600;
+}
+
+.deleteButton {
+  width: 10%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.deleteButton button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.deleteButton * img {
+  height: 20px;
+  width: auto;
+
+}
+
+.buttonRounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: dodgerblue;
+  background: white;
+  font-size: 14px;
+  height: 30px;
+  width: 30px;
+  outline: none;
+  margin: 0 10px;
+  border: 1px solid #c9c9c9;
+}
+
+.buttonRounded:hover {
+  cursor: pointer;
+  background: #c9c9c9;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  .nameAndPrice {
+    width: 80%;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .deleteButton {
+    order: 2;
+    width: 20%;
+    align-self: flex-start;
+  }
+
+  .quantity {
+    order: 3;
+    width: 70%;
+  }
+
+  .productPriceTotal {
+    width: 30%;
+    order: 4;
+    justify-content: flex-end;
+  }
+
+  .buttonRounded {
+    margin: 0
+  }
+
+  .quantityInput {
+    margin: 0 10px;
+  }
+
+
+}
